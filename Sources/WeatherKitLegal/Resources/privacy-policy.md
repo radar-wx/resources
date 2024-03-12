@@ -150,5 +150,3 @@ For more information about these rights, please contact us.
 Don't hesitate to contact us if you have any questions.
 
 - Via Email:  daniel.lisovoy@gmail.com
-<!-- -Via this Link:  https://example.domain.com -->
-
