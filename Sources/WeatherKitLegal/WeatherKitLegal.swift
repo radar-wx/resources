@@ -3,7 +3,7 @@ import MarkdownUI
 
 public enum Raw {
     public static let privacyPolicy = url(for: "privacy-policy")
-    public static let termsOfService = url(for: "termsOfService")
+    public static let termsOfService = url(for: "terms-of-service")
 }
 
 public enum UI {
