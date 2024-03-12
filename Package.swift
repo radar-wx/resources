@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "resources",
+    name: "weather-app-resources",
     platforms: [
         .iOS(.v15),
         .tvOS(.v15),
