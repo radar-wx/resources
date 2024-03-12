@@ -1,11 +1,12 @@
+import Foundation
 import MarkdownUI
 
 public enum Raw {
-    public static let privacyPolicy = content(for: "privacy-policy")
-    public static let termsOfService = content(for: "termsOfService")
+    public static let privacyPolicy = url(for: "privacy-policy")
+    public static let termsOfService = url(for: "termsOfService")
 }
 
 public enum UI {
-    public static let privacyPolicy = Markdown(Raw.privacyPolicy)
-    public static let termsOfService = Markdown(Raw.termsOfService)
+    public static let privacyPolicy = Markdown(content(for: Raw.privacyPolicy))
+    public static let termsOfService = Markdown(content(for: Raw.termsOfService))
 }
