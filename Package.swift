@@ -12,14 +12,14 @@ let package = Package(
     products: [
         .library(
             name: "WeatherKitLegal",
-            targets: ["weather-kit-legal"]),
+            targets: ["WeatherKitLegal"]),
     ],
     dependencies: [
         .package(url: "https://github.com/gonzalezreal/swift-markdown-ui", from: "2.0.2")
     ],
     targets: [
         .target(
-            name: "weather-kit-legal",
+            name: "WeatherKitLegal",
             dependencies: [
                 .product(name: "MarkdownUI", package: "swift-markdown-ui")
             ],
@@ -28,6 +28,6 @@ let package = Package(
             ]),
         .testTarget(
             name: "weather-kit-legalTests",
-            dependencies: ["weather-kit-legal"]),
+            dependencies: ["WeatherKitLegal"]),
     ]
 )
