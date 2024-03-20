@@ -1,4 +1,4 @@
-# Weather Kit
+# Radar WX
 
 This is an app's resources repository.
 
