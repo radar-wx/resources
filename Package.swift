@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "weather-app-resources",
+    name: "radar-wx-resources",
     platforms: [
         .iOS(.v15),
         .tvOS(.v15),
@@ -11,15 +11,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "WeatherKitLegal",
-            targets: ["WeatherKitLegal"]),
+            name: "RadarWXLegal",
+            targets: ["RadarWXLegal"]),
     ],
     dependencies: [
         .package(url: "https://github.com/gonzalezreal/swift-markdown-ui", from: "2.0.2")
     ],
     targets: [
         .target(
-            name: "WeatherKitLegal",
+            name: "RadarWXLegal",
             dependencies: [
                 .product(name: "MarkdownUI", package: "swift-markdown-ui")
             ],
@@ -27,7 +27,7 @@ let package = Package(
                 .process("Resources")
             ]),
         .testTarget(
-            name: "weather-kit-legalTests",
-            dependencies: ["WeatherKitLegal"]),
+            name: "radar-wx-legalTests",
+            dependencies: ["RadarWXLegal"]),
     ]
 )
